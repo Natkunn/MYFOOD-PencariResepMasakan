@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("../img/bg2.png");
+    background-size: cover;
+}
+nav{
+    font-family: "Roboto Slab", sans-serif;
+}
+.brand-logo{
+    font-family: "Roboto Slab", sans-serif;
+}
+#home{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 0 30% 30%;
+    margin-bottom: 20px;
+}
+#home img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+#home h1{
+    margin-left: 50px;
+    font-family: "Roboto Slab", sans-serif;
+    color: white;
+    text-shadow: 2px 5px 10px black;
+}
+#home h1 span{
+    color: lightgreen;
+}
+#home p{
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: 80px;
+    color: white;
+    font-style: italic;
+}
+#home h6{
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+#mylist{
+    width: 95%;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    font-family: "Roboto Slab";
+}
+#mylist h3{
+    margin: 0;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#mylist p{
+    margin-left: 20px;
+}
+.thelist{
+    padding: 20px;
+    margin: auto;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 20px;
+}
+.thelist h2{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: green;
+}
+.toggle-des{
+    margin-bottom: 5px;
+}
+.thelist:hover .toggle-des{
+    text-decoration: underline;
+}
+.des-msk{
+    margin-top: 5px;
+}
+.pic-rencana{
+    border: solid grey;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.pic-rencana img{
+    position: relative;
+    top: -400px;
+    width: 100%;
+}
+#hapus{
+    margin-left: 20px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 1px 1px 3px black;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: grey;
+    cursor: pointer;
+}
+#hapus:hover{
+    text-decoration: underline;
+    color: red;
+}
+footer{
+    font-family: "Roboto Slab", sans-serif;
+    margin-top: 70px;
+    background-image: url("../img/footer.jpg");
+    height: 250px;
+    color: white;
+    padding: 10px;
+}
+.about{
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 200px;
+}
+.about img{
+    width: 60px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: grey;
+}
+.contact{
+    text-align: center;
+    float: right;
+    width: 50%;
+    height: 200px;
+}
+.cr{
+    text-align: center;
+}
+.contact img{
+    margin: 10px;
+    margin-top: 15px;
+    width: 50px;
+}
+@media screen and (max-width: 550px){
+    #home{
+        margin-bottom: -150px;
+    }
+    #home h1{
+        margin-top: 5px;
+        margin-left: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+    #home p{
+        margin-top: -20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .pic-rencana img{
+        top: -100px;
+    }
+}

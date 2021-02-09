@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to MY FOOD</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="green darken-4">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#home" class="brand-logo"><i class="large material-icons">restaurant</i>MYFOOD</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#search">Search</a></li>
+                            <li><a href="#mylist">My List</a></li>
+                            <li><a href="#footer">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#mylist">My List</a></li>
+            <li><a href="#footer">About Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="home">
+            <img src="./img/bg.jpg">
+            <h1>WELCOME TO <span>MYFOOD</span></h1>
+            <p>Menyediakan lebih dari 100+ resep masakan</p>
+            <h6>Cari Resep untuk memulai :</h6>
+            <search-bar id="search"></search-bar>
+        </div>
+        <food-list id="hasil"></food-list>
+        <div id="mylist">
+            <h3>My List <i class="material-icons">local_dining</i></h3>
+            <p>Belum punya rencana? Cari dan klik tombol<i class="material-icons">add_circle</i></p>
+            <div id="rencana" title="Cara Buat"></div>
+            <h5 id="hapus"><i class="material-icons">delete_forever</i>Hapus semua rencana</h5>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="about">
+            <h5>Made by</h5>
+            <img src="./img/profile.jpg">
+            <p>I Wayan Natura Adnyana</p>
+            <p>Gianyar, Bali</p>
+        </div>
+        <div class="contact">
+            <h5>Contact</h5>
+            <p>Telp. (+62)83 115 155 885<br>Also :</p>
+            <a href="https://www.facebook.com/inoue.natsura"><img src="./img/facebook.svg"></a>
+            <a href="https://www.instagram.com/natkunn_/"><img src="./img/instagram.svg"></a>
+            <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=natura538@gmail.com"><img src="./img/gmail.svg"></a>
+        </div>
+        <div class="cr">
+            <h6>Made with passion &copy 2020 Developed by Natura</h6>
+        </div>
+    </footer>
+</body>
+</html>
